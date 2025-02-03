@@ -1,4 +1,4 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Testimonials grid section solution
 
 ## Languages
 This first section is in English. 
@@ -7,9 +7,9 @@ This first section is in English.
 
 ## Context
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-> Your challenge is to build out this feature section and get it looking as close to the design as possible.
+> Your challenge is to build out this testimonials grid section and get it looking as close to the design as possible.
 
 ## Table of contents
 
@@ -20,7 +20,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -48,7 +47,7 @@ Users should be able to:
 #### Mobile
 
 <p align="center">
-  <img src="./src/design/mobile-screenshot.png" alt="Mobile Screenshot of live page" title="Mobile Screenshot of live page" width="300px" />
+  <img src="./src/design/mobile-screenshot.jpg" alt="Mobile Screenshot of live page" title="Mobile Screenshot of live page" width="300px" />
 </p>
 
 ### Links
@@ -64,40 +63,38 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Media Query + clamp()
+- Media Query
 
 ### What I learned
 
 In this project I was able to use flexbox, grid, variable, and media query concepts in CSS, as well as using a ready-made Figma design to create this component. I also used `rem` for measurements and BEM methodology for naming classes.
 
-This was also my first time using `clamp()` for responsiveness.
-
 ```css
-:root {
-  /* TEXT PRESET 1 - HEADER */
-  --text-header-size: clamp(2.4rem, calc(1.2rem + 3.8vw), 3.6rem);
+.testimonials {
+  display: grid;
+  grid-template:
+    "big-horizontal-1 big-horizontal-1 small-1 big-vertical" auto
+    "small-2 big-horizontal-2 big-horizontal-2 big-vertical" auto / 25.5rem 25.5rem 25.5rem 25.5rem;
+  gap: 2.4rem 3rem;
 }
 ```
-
-### Useful resources
-
-- [Font-size Clamp Generator](https://clamp.font-size.app/) - This helped me choose values ​​to put in my clamp() functions.
 
 ## Author
 
 - Website - [João Víctor de Araujo Lima's Portfolio](https://xuaun.github.io/)
 - Frontend Mentor - [@xuaun](https://www.frontendmentor.io/profile/xuaun)
 
+
 ____
 <br>
 
-# <p id="portuguese">Frontend Mentor - Solução do projeto de seção com quatro cards</p>
+# <p id="portuguese">Frontend Mentor - Solução do projeto de seção de grid de depoimentos</p>
 
 ## Contexto
 
-Esta é uma solução para o [desafio de seção com quatro cards no Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação construindo projetos realistas.
+Esta é uma solução para o [desafio de seção de grid de depoimentos no Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação construindo projetos realistas.
 
-> Seu desafio é criar essa seção com quatro cards e fazer com que ela tenha a aparência mais próxima possível do design.
+> Seu desafio é criar essa seção de grid de depoimentos e fazer com que ela fique o mais próxima possível do design.
 
 ## Lista de conteúdos
 
@@ -108,7 +105,6 @@ Esta é uma solução para o [desafio de seção com quatro cards no Frontend Me
 - [Meu processo](#meu-processo)
   - [Tecnologias utilizadas](#tecnologias-utilizadas)
   - [O que eu aprendi](#o-que-eu-aprendi)
-  - [Recursos úteis](#recursos-úteis)
 - [Autor](#autor)
 
 ## Visão Geral
@@ -136,7 +132,7 @@ Os usuários devem ser capazes de:
 #### Celular
 
 <p align="center">
-  <img src="./src/design/mobile-screenshot.png" alt="Print da tela no Celular" title="Print da tela no Celular" width="300px" />
+  <img src="./src/design/mobile-screenshot.jpg" alt="Print da tela no Celular" title="Print da tela no Celular" width="300px" />
 </p>
 
 ### <p id="links-pt">Links</p>
@@ -152,24 +148,21 @@ Os usuários devem ser capazes de:
 - CSS
 - Flexbox
 - CSS Grid
-- Media Query + clamp()
+- Media Query
 
 ### O que eu aprendi
 
 Neste projeto eu pude utilizar conceitos de flexbox e grid, de variáveis e de media query no CSS, além de usar um design pronto do Figma para a elaboração deste componente. Eu também usei `rem` para medidas e metodologia BEM para nomear classes.
 
-Esta também foi minha primeira vez usando clamp() para responsividade.
-
 ```css
-:root {
-  /* TEXT PRESET 1 - HEADER */
-  --text-header-size: clamp(2.4rem, calc(1.2rem + 3.8vw), 3.6rem);
+.testimonials {
+  display: grid;
+  grid-template:
+    "big-horizontal-1 big-horizontal-1 small-1 big-vertical" auto
+    "small-2 big-horizontal-2 big-horizontal-2 big-vertical" auto / 25.5rem 25.5rem 25.5rem 25.5rem;
+  gap: 2.4rem 3rem;
 }
 ```
-
-### Recursos úteis
-
-- [Font-size Clamp Generator](https://clamp.font-size.app/) - Este link me ajudou a escolher valores para colocar nas minhas funções `clamp()`.
 
 ## Autor
 

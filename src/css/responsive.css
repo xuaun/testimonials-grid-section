@@ -1,22 +1,53 @@
 @media (max-width: 70rem) {
-  .page {
-    grid-template-areas:
-      "intro intro"
-      "supervisor team-builder"
-      "karma calculator";
+  .testimonials {
+    grid-template:
+      "big-horizontal-1 big-horizontal-1 small-1" auto
+      "small-2 big-horizontal-2 big-horizontal-2" auto
+      "big-vertical big-vertical ." auto / 25.5rem 25.5rem 25.5rem;
   }
 }
 
-@media (max-width: 45rem) {
-  .page {
-    grid-template-areas:
-      "intro"
-      "supervisor"
-      "team-builder"
-      "karma"
-      "calculator";
+@media (max-width: 55rem) {
+  .testimonials {
+    grid-template:
+      "big-horizontal-1 big-horizontal-1" auto
+      "small-1 small-2" auto
+      "big-horizontal-2 big-horizontal-2" auto
+      "big-vertical big-vertical" auto / 25.5rem 25.5rem;
   }
-  .card {
-    margin: 0 auto;
+}
+
+@media (max-width: 35rem) {
+  .testimonials {
+    grid-template:
+      "big-horizontal-1" auto
+      "small-1" auto
+      "small-2" auto
+      "big-horizontal-2" auto
+      "big-vertical" auto / 1fr;
+  }
+
+  .testimonial:first-child .testimonial__header {
+    margin-bottom: 4rem;
+  }
+
+  .testimonial:first-child::after {
+    right: 2.4rem;
+  }
+
+  .testimonial:nth-child(2) .testimonial__header {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonial:nth-child(3) .testimonial__header {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonial:nth-child(4) .testimonial__header {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonial:last-child .testimonial__header {
+    margin-bottom: 1.6rem;
   }
 }
