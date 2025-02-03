@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+}
+
+.page {
+  background-color: var(--background-page-color);
+  display: grid;
+  grid-template-areas:
+    "intro intro intro"
+    ". team-builder ."
+    "supervisor team-builder calculator"
+    "supervisor karma calculator"
+    ". karma .";
+  gap: clamp(2.4rem, calc(1rem + 5vw), 3rem);
+  justify-content: center;
+  font-family: var(--text-family);
+  color: var(--text-color);
+  padding: clamp(8rem, 7.7rem + 0.84vw, 8.5rem) clamp(3.2rem, 0rem + 8vw, 8rem);
+}
+
+/* PAGE - INTRO */
+.page__intro {
+  grid-area: intro;
+  text-align: center;
+  margin-bottom: clamp(6.4rem, 8.4rem + -2vw, 7.6rem);
+}
+
+.page__header {
+  font-size: var(--text-header-size);
+  font-weight: var(--text-header-weight);
+  letter-spacing: var(--text-header-spacing);
+  margin-bottom: 1.6rem;
+}
+
+.page__header span {
+  font-weight: var(--text-header-bold-weight);
+}
+
+.page__description {
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-height);
+  letter-spacing: var(--text-body-spacing);
+  max-width: clamp(31.1rem, 15.8rem + 38vw, 54rem);
+  margin: 0 auto;
+}
+
+/* PAGE - CARDS */
+.card {
+  background-color: var(--background-card-color);
+  border-radius: 0.4rem;
+  border: 0;
+  width: clamp(31.1rem, 28.5rem + 6.5vw, 35rem);
+  padding: clamp(2.9rem, 2.7rem + 0.5vw, 3.2rem);
+  box-shadow: 0rem 1.5rem 3rem -1.1rem var(--shadow-color);
+}
+
+.card__header {
+  font-size: var(--text-card-header-size);
+  font-weight: var(--text-card-header-weight);
+  letter-spacing: var(--text-card-header-spacing);
+  margin-bottom: 0.6rem;
+}
+
+.card__description {
+  font-size: var(--text-card-body-size);
+  font-weight: var(--text-card-body-weight);
+  line-height: var(--text-card-body-height);
+  letter-spacing: var(--text-card-body-spacing);
+  margin-bottom: 4rem;
+}
+
+.card__icon {
+  width: clamp(5.7rem, 5.2rem + 1.17vw, 6.4rem);
+  height: clamp(5.7rem, 5.2rem + 1.17vw, 6.4rem);
+  margin-left: calc(
+    clamp(22.6rem, calc(20.7rem + 4.7vw), 25.4rem) -
+      clamp(0rem, calc(2.7rem + 0.5vw), 3.2rem)
+  );
+}
+
+.card--supervisor {
+  grid-area: supervisor;
+  border-top: 0.4rem solid var(--border-supervisor-color);
+}
+
+.card--team-builder {
+  grid-area: team-builder;
+  border-top: 0.4rem solid var(--border-team-builder-color);
+}
+
+.card--karma {
+  grid-area: karma;
+  border-top: 0.4rem solid var(--border-karma-color);
+}
+
+.card--calculator {
+  grid-area: calculator;
+  border-top: 0.4rem solid var(--border-calculator-color);
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  font-size: 1.1rem;
+  color: var(--text-desc-color);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(0, 0%, 100%, 80%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.attribution__link {
+  color: var(--border-karma-color);
+}
+
+.attribution__link:hover {
+  color: var(--border-team-builder-color);
+}

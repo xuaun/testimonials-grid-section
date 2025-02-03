@@ -1,0 +1,22 @@
+@media (max-width: 70rem) {
+  .page {
+    grid-template-areas:
+      "intro intro"
+      "supervisor team-builder"
+      "karma calculator";
+  }
+}
+
+@media (max-width: 45rem) {
+  .page {
+    grid-template-areas:
+      "intro"
+      "supervisor"
+      "team-builder"
+      "karma"
+      "calculator";
+  }
+  .card {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  /* COLORS */
+  --background-page-color: hsl(0, 0%, 98%);
+  --background-card-color: hsl(0, 0%, 100%);
+  --text-color: hsl(232, 12%, 34%);
+  --border-supervisor-color: hsl(180, 62%, 55%);
+  --border-team-builder-color: hsl(0, 78%, 62%);
+  --border-karma-color: hsl(34, 97%, 64%);
+  --border-calculator-color: hsl(212, 86%, 64%);
+  --shadow-color: hsla(213, 47%, 67%, 50%);
+
+  /* TEXT PRESETS */
+  --text-family: "Poppins", sans-serif;
+
+  /* TEXT PRESET 1 - HEADER */
+  --text-header-size: clamp(2.4rem, calc(1.2rem + 3.8vw), 3.6rem);
+  --text-header-weight: 200;
+  /* --text-header-height: 3.6rem; */
+  --text-header-spacing: clamp(0.017rem, 0.0117rem + 0.025vw, 0.015625rem);
+  /* TEXT PRESET 1 BOLD - HEADER */
+  --text-header-bold-weight: 600;
+
+  /* TEXT PRESET 2 - BODY */
+  --text-body-size: 1.5rem;
+  --text-body-weight: 400;
+  --text-body-height: 2.5rem;
+  --text-body-spacing: 0.01rem;
+
+  /* TEXT PRESET 3 - CARD HEADER */
+  --text-card-header-size: 2rem;
+  --text-card-header-weight: 600;
+  /* --text-card-header-height: 2rem; */
+  --text-card-header-spacing: 0rem;
+
+  /* TEXT PRESET 4 - CARD BODY */
+  --text-card-body-size: 1.3rem;
+  --text-card-body-weight: 400;
+  --text-card-body-height: 2.3rem;
+  --text-card-body-spacing: 0.009rem;
+}
